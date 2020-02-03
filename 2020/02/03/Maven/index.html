@@ -6,13 +6,17 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="http://yoursite.com">
-  <title>Archives | 路飞大魔王的博客</title>
+  <title>Maven | 路飞大魔王的博客</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta property="og:type" content="website">
-<meta property="og:title" content="路飞大魔王的博客">
-<meta property="og:url" content="http://yoursite.com/archives/index.html">
+  <meta name="description" content="Maven  Maven是一个项目管理工具，它包含了一个项目对象模型(POM: Project Object Model)，一组标准集合，一个项目生命周期(Project Lifecycle)，一个依赖管理系统(Dependency Management System)，和用来运行定义在生命周期阶段(phase)中插件(plugin)目标(goal)的逻辑。  Maven的使用1.Maven的安装">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Maven">
+<meta property="og:url" content="http://yoursite.com/2020/02/03/Maven/index.html">
 <meta property="og:site_name" content="路飞大魔王的博客">
+<meta property="og:description" content="Maven  Maven是一个项目管理工具，它包含了一个项目对象模型(POM: Project Object Model)，一组标准集合，一个项目生命周期(Project Lifecycle)，一个依赖管理系统(Dependency Management System)，和用来运行定义在生命周期阶段(phase)中插件(plugin)目标(goal)的逻辑。  Maven的使用1.Maven的安装">
 <meta property="og:locale" content="en_US">
+<meta property="article:published_time" content="2020-02-03T07:27:57.445Z">
+<meta property="article:modified_time" content="2020-02-03T12:54:39.562Z">
 <meta property="article:author" content="路飞大魔王">
 <meta name="twitter:card" content="summary">
   
@@ -142,255 +146,184 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            
+            <article id="post-Maven" class="article article-type-post " itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
   
+    <h1 class="article-title" itemprop="name">
+      Maven
+    </h1>
   
-    
-    
-      
-      
-      <section class="archives-wrap">
-        <div class="archive-year-wrap">
-          <a href="/archives/2020" class="archive-year">2020</a>
-        </div>
-        <div class="archives">
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2020/02/03/Maven/" class="archive-article-date">
+
+        
+        <a href="/2020/02/03/Maven/" class="archive-article-date">
   	<time datetime="2020-02-03T07:27:57.445Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-02-03</time>
 </a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2020/02/03/Maven/">Maven</a>
-    </h1>
-  
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h1 id="Maven"><a href="#Maven" class="headerlink" title="Maven"></a>Maven</h1><blockquote>
+<p> Maven是一个项目管理工具，它包含了一个项目对象模型(POM: Project Object Model)，一组标准集合，一个项目生命周期(Project Lifecycle)，一个依赖管理系统(Dependency Management System)，和用来运行定义在生命周期阶段(phase)中插件(plugin)目标(goal)的逻辑。</p>
+</blockquote>
+<h3 id="Maven的使用"><a href="#Maven的使用" class="headerlink" title="Maven的使用"></a>Maven的使用</h3><h3 id="1-Maven的安装"><a href="#1-Maven的安装" class="headerlink" title="1.Maven的安装"></a>1.Maven的安装</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">1.下载Maven，解压目录不要出现中文</span><br><span class="line">2.安装JDK</span><br><span class="line">3.配置Maven环境变量：</span><br><span class="line">	1.新建：变量名：MAVEN_HOME </span><br><span class="line">		 变量值：D:\Apache\Maven\apache-maven-3.6.3</span><br><span class="line">	2.Path添加：%MAVEN_HOME%\bin</span><br><span class="line">	3.cmd测试:mvn -v</span><br><span class="line">4.修改本地仓库位置:</span><br><span class="line">	修改Maven目录下conf-&gt;settings.xml:</span><br><span class="line">		&lt;localRepository&gt;D:\Apache\Maven\apache-maven-3.6.3\repo&lt;&#x2F;localRepository&gt;</span><br></pre></td></tr></table></figure>
 
-        <div class="article-info info-on-right">
-          
-          
+<h3 id="2-Maven常用命令"><a href="#2-Maven常用命令" class="headerlink" title="2.Maven常用命令"></a>2.Maven常用命令</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">compile:编译命令,作用是将src&#x2F;main&#x2F;java下的文件编译为class文件输出到target目录下</span><br><span class="line">clean:清理target目录及内容</span><br><span class="line">test:测试命令,会执行src&#x2F;test&#x2F;java下的单元测试类</span><br><span class="line">package:打包命令,对于Java工程执行会打包成jar包,对web工程会打包成war包</span><br><span class="line">install:安装命令,执行install将maven打成jar或者war包发布到本地仓库</span><br></pre></td></tr></table></figure>
 
+<p><em><a href="https://blog.csdn.net/liugenxing/article/details/69948462" target="_blank" rel="noopener">Ps:Maven骨架(archtype)的类型</a></em></p>
+<h3 id="3-添加依赖"><a href="#3-添加依赖" class="headerlink" title="3.添加依赖"></a>3.添加依赖</h3><figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">pom.xml中:</span><br><span class="line"> 添加标签:<span class="tag">&lt;<span class="name">dependency</span>&gt;</span></span><br><span class="line"> 			<span class="tag">&lt;<span class="name">groupId</span>&gt;</span><span class="tag">&lt;/<span class="name">groupId</span>&gt;</span></span><br><span class="line">     		<span class="tag">&lt;<span class="name">artifactId</span>&gt;</span><span class="tag">&lt;/<span class="name">artifactId</span>&gt;</span></span><br><span class="line">     		<span class="tag">&lt;<span class="name">version</span>&gt;</span><span class="tag">&lt;/<span class="name">version</span>&gt;</span></span><br><span class="line"> 		 <span class="tag">&lt;/<span class="name">dependency</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<pre><code>####     3.1统一版本号</code></pre><figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">&lt;!--自定义标签--&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">properties</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">llc.version</span>&gt;</span>5.0.2.RELEASE<span class="tag">&lt;/<span class="name">llc.version</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">properties</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">dependencies</span>&gt;</span></span><br><span class="line">	<span class="tag">&lt;<span class="name">dependency</span>&gt;</span></span><br><span class="line">    	<span class="tag">&lt;<span class="name">groupId</span>&gt;</span>org.springframework<span class="tag">&lt;/<span class="name">groupId</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">artifactId</span>&gt;</span>spring-context<span class="tag">&lt;/<span class="name">artifactId</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">version</span>&gt;</span>$&#123;llc.version&#125;<span class="tag">&lt;/<span class="name">version</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">dependency</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">dependencies</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<h3 id="4-Maven工程聚合继承"><a href="#4-Maven工程聚合继承" class="headerlink" title="4.Maven工程聚合继承"></a>4.Maven工程聚合继承</h3><blockquote>
+<p>父工程下New-&gt;Module</p>
+<p>子工程会继承父工程依赖的版本号</p>
+</blockquote>
+
+      
+
+      
+        <div class="page-reward">
+          <a href="javascript:;" class="page-reward-btn tooltip-top">
+            <div class="tooltip tooltip-east">
+            <span class="tooltip-item">
+              赏
+            </span>
+            <span class="tooltip-content">
+              <span class="tooltip-text">
+                <span class="tooltip-inner">
+                  <p class="reward-p"><i class="icon icon-quo-left"></i>谢谢你请我吃糖果<i class="icon icon-quo-right"></i></p>
+                  <div class="reward-box">
+                    
+                    
+                  </div>
+                </span>
+              </span>
+            </span>
+          </div>
+          </a>
         </div>
-        <div class="clearfix"></div>
-    </header>
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+      
+
+      
+
+      
+        
+<div class="share-btn share-icons tooltip-left">
+  <div class="tooltip tooltip-east">
+    <span class="tooltip-item">
+      <a href="javascript:;" class="share-sns share-outer">
+        <i class="icon icon-share"></i>
+      </a>
+    </span>
+    <span class="tooltip-content">
+      <div class="share-wrap">
+        <div class="share-icons">
+          <a class="weibo share-sns" href="javascript:;" data-type="weibo">
+            <i class="icon icon-weibo"></i>
+          </a>
+          <a class="weixin share-sns wxFab" href="javascript:;" data-type="weixin">
+            <i class="icon icon-weixin"></i>
+          </a>
+          <a class="qq share-sns" href="javascript:;" data-type="qq">
+            <i class="icon icon-qq"></i>
+          </a>
+          <a class="douban share-sns" href="javascript:;" data-type="douban">
+            <i class="icon icon-douban"></i>
+          </a>
+          <a class="qzone share-sns" href="javascript:;" data-type="qzone">
+            <i class="icon icon-qzone"></i>
+          </a>
+          <a class="facebook share-sns" href="javascript:;" data-type="facebook">
+            <i class="icon icon-facebook"></i>
+          </a>
+          <a class="twitter share-sns" href="javascript:;" data-type="twitter">
+            <i class="icon icon-twitter"></i>
+          </a>
+          <a class="google share-sns" href="javascript:;" data-type="google">
+            <i class="icon icon-google"></i>
+          </a>
+        </div>
+      </div>
+    </span>
+  </div>
+</div>
+
+<div class="page-modal wx-share js-wx-box">
+    <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
+    <p>扫一扫，分享到微信</p>
+    <div class="wx-qrcode">
+      <img src="//pan.baidu.com/share/qrcode?url=http://yoursite.com/2020/02/03/Maven/" alt="微信分享二维码">
+    </div>
+</div>
+
+<div class="mask js-mask"></div>
+      
+      <div class="clearfix"></div>
+    </div>
   </div>
 </article>
+
   
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2020/02/03/Spring/" class="archive-article-date">
-  	<time datetime="2020-02-03T02:30:49.764Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-02-03</time>
-</a>
+<nav id="article-nav">
+  
+  
+    <a href="/2020/02/03/Spring/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">Spring</div>
+      <i class="icon-circle-right"></i>
+    </a>
+  
+</nav>
+
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
         </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2020/02/03/Spring/">Spring</a>
-    </h1>
-  
-
-        <div class="article-info info-on-right">
-          
-          
-
+        
+        
+        <div class="toc-container tooltip-left">
+            <i class="icon-font icon-category"></i>
+            <div class="tooltip tooltip-east">
+                <span class="tooltip-item">
+                </span>
+                <span class="tooltip-content">
+                    <div class="toc-article">
+                    <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#Maven"><span class="toc-number">1.</span> <span class="toc-text">Maven</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#Maven的使用"><span class="toc-number">1.0.1.</span> <span class="toc-text">Maven的使用</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#1-Maven的安装"><span class="toc-number">1.0.2.</span> <span class="toc-text">1.Maven的安装</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-Maven常用命令"><span class="toc-number">1.0.3.</span> <span class="toc-text">2.Maven常用命令</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3-添加依赖"><span class="toc-number">1.0.4.</span> <span class="toc-text">3.添加依赖</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#4-Maven工程聚合继承"><span class="toc-number">1.0.5.</span> <span class="toc-text">4.Maven工程聚合继承</span></a></li></ol></li></ol></li></ol>
+                    </div>
+                </span>
+            </div>
         </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
+        
+    </div>
+</aside>
+
+
+
   
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2020/01/31/python%E7%AC%94%E8%AE%B0/" class="archive-article-date">
-  	<time datetime="2020-01-31T12:00:02.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-01-31</time>
-</a>
-        </div>
-    	 
   
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2020/01/31/python%E7%AC%94%E8%AE%B0/">python笔记</a>
-    </h1>
   
 
-        <div class="article-info info-on-right">
-          
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2020/01/30/%E6%95%B0%E5%AD%A6%E5%BB%BA%E6%A8%A1%E4%B9%8B%E5%88%86%E7%B1%BB%E6%A8%A1%E5%9E%8B/" class="archive-article-date">
-  	<time datetime="2020-01-30T07:42:05.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-01-30</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2020/01/30/%E6%95%B0%E5%AD%A6%E5%BB%BA%E6%A8%A1%E4%B9%8B%E5%88%86%E7%B1%BB%E6%A8%A1%E5%9E%8B/">数学建模-分类模型</a>
-    </h1>
   
 
-        <div class="article-info info-on-right">
-          
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color2">created by luffy</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2020/01/29/Github-hexo%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/" class="archive-article-date">
-  	<time datetime="2020-01-29T06:38:41.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-01-29</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2020/01/29/Github-hexo%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/">Github+hexo搭建个人博客</a>
-    </h1>
   
 
-        <div class="article-info info-on-right">
-          
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color2">created by luffy</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
   
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2020/01/29/%E5%9B%BE%E7%89%87%E5%92%8C%E5%AD%97%E7%AC%A6%E4%B8%B2%E7%BC%96%E7%A0%81%E7%9A%84%E7%9B%B8%E4%BA%92%E8%BD%AC%E6%8D%A2/" class="archive-article-date">
-  	<time datetime="2020-01-29T06:38:20.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-01-29</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2020/01/29/%E5%9B%BE%E7%89%87%E5%92%8C%E5%AD%97%E7%AC%A6%E4%B8%B2%E7%BC%96%E7%A0%81%E7%9A%84%E7%9B%B8%E4%BA%92%E8%BD%AC%E6%8D%A2/">图片和字符串编码的相互转换</a>
-    </h1>
-  
-
-        <div class="article-info info-on-right">
-          
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color2">created by luffy</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2020/01/29/%E6%95%B0%E5%AD%A6%E5%BB%BA%E6%A8%A1-%E5%9B%BE%E8%AE%BA%E6%9C%80%E7%9F%AD%E8%B7%AF%E5%BE%84%E9%97%AE%E9%A2%98/" class="archive-article-date">
-  	<time datetime="2020-01-29T06:37:57.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-01-29</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2020/01/29/%E6%95%B0%E5%AD%A6%E5%BB%BA%E6%A8%A1-%E5%9B%BE%E8%AE%BA%E6%9C%80%E7%9F%AD%E8%B7%AF%E5%BE%84%E9%97%AE%E9%A2%98/">数学建模-图论最短路径问题</a>
-    </h1>
-  
-
-        <div class="article-info info-on-right">
-          
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color2">created by luffy</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-  
-    </div></section>
-  
-
-    
 
 
           </div>
@@ -413,8 +346,8 @@
 	var yiliaConfig = {
 		mathjax: false,
 		isHome: false,
-		isPost: false,
-		isArchive: true,
+		isPost: true,
+		isArchive: false,
 		isTag: false,
 		isCategory: false,
 		open_in_new: false,
