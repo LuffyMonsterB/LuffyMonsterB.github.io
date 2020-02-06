@@ -6,19 +6,18 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="http://yoursite.com">
-  <title>Github+hexo搭建个人博客 | 路飞大魔王的博客</title>
+  <title>数学建模-聚类模型 | 路飞大魔王的博客</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="一、hexo搭建本地博客">
+  <meta name="description" content="聚类模型">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Github+hexo搭建个人博客">
-<meta property="og:url" content="http://yoursite.com/2020/01/29/Github-hexo%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/index.html">
+<meta property="og:title" content="数学建模-聚类模型">
+<meta property="og:url" content="http://yoursite.com/2020/02/05/%E6%95%B0%E5%AD%A6%E5%BB%BA%E6%A8%A1-%E8%81%9A%E7%B1%BB%E6%A8%A1%E5%9E%8B/index.html">
 <meta property="og:site_name" content="路飞大魔王的博客">
-<meta property="og:description" content="一、hexo搭建本地博客">
+<meta property="og:description" content="聚类模型">
 <meta property="og:locale" content="en_US">
-<meta property="article:published_time" content="2020-01-29T06:38:41.000Z">
-<meta property="article:modified_time" content="2020-01-29T08:15:42.175Z">
+<meta property="article:published_time" content="2020-02-05T02:10:18.645Z">
+<meta property="article:modified_time" content="2020-02-05T13:12:26.722Z">
 <meta property="article:author" content="路飞大魔王">
-<meta property="article:tag" content="created by luffy">
 <meta name="twitter:card" content="summary">
   
     <link rel="alternative" href="/atom.xml" title="路飞大魔王的博客" type="application/atom+xml">
@@ -147,50 +146,62 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            <article id="post-Github-hexo搭建个人博客" class="article article-type-post " itemscope itemprop="blogPost">
+            <article id="post-数学建模-聚类模型" class="article article-type-post " itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
         
   
     <h1 class="article-title" itemprop="name">
-      Github+hexo搭建个人博客
+      数学建模-聚类模型
     </h1>
   
 
         
-        <a href="/2020/01/29/Github-hexo%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/" class="archive-article-date">
-  	<time datetime="2020-01-29T06:38:41.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-01-29</time>
+        <a href="/2020/02/05/%E6%95%B0%E5%AD%A6%E5%BB%BA%E6%A8%A1-%E8%81%9A%E7%B1%BB%E6%A8%A1%E5%9E%8B/" class="archive-article-date">
+  	<time datetime="2020-02-05T02:10:18.645Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-02-05</time>
 </a>
         
       </header>
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h3 id="一、hexo搭建本地博客"><a href="#一、hexo搭建本地博客" class="headerlink" title="一、hexo搭建本地博客"></a>一、hexo搭建本地博客</h3> <a id="more"></a>
-<pre><code>1.安装Node.js
-2.npm install -g cnpm --registry=https://registry.npm.taobao.org
-3.cnpm install -g hexo-cli
-4.新建一个文件夹，来存放博客内容
-5.进入文件夹，cmd命令:hexo init
-6.启动博客：hexo s
-7.新建文章：hexo n &quot;blogName&quot;(生成的是md文件)
-8.生成博客文章：hexo g</code></pre><h3 id="二、博客部署到Github"><a href="#二、博客部署到Github" class="headerlink" title="二、博客部署到Github"></a>二、博客部署到Github</h3><pre><code>1.Github新建仓库
-2.仓库命名必须为：用户名.github.io
-3.安装hexo相关git插件：cnpm install --save hexo-deployer-git
-4.blog目录下设置_config.yml文件：
-    Deployment下
-    type: git 
-    repo: 仓库地址（后缀为.git的url）
-    branch: master
-5.hexo d</code></pre><h3 id="三、自定义博客主题"><a href="#三、自定义博客主题" class="headerlink" title="三、自定义博客主题"></a>三、自定义博客主题</h3><pre><code>GitHub：github.com/litten/hexo-theme-yilia
-更换主题：
-    1.git clone 
-        https://github.com/litten/hexo-theme-yilia.git themes/yilia
-        https://github.com/luuman/hexo-theme-spfk.git themes/spfk
-    2.修改_config,yml: theme: yilia
-    3.重启hexo:hexo clean-&gt;hexo g-&gt; hexo s
-    4.推到远端：hexo d</code></pre>
+        <h2 id="聚类模型"><a href="#聚类模型" class="headerlink" title="聚类模型"></a>聚类模型</h2><a id="more"></a>
+
+<h3 id="1-K-means聚类算法"><a href="#1-K-means聚类算法" class="headerlink" title="1.K-means聚类算法"></a>1.K-means聚类算法</h3><ul>
+<li>K-means聚类的算法流程：</li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">一、指定需要划分的簇的个数K值（类的个数）；</span><br><span class="line">二、随机地选择K个数据对象作为初始的聚类中心（不一定要是样本点）；</span><br><span class="line">三、计算其余的各个数据对象到这K个初始聚类中心的距离，把数据对象划归到距离它最近的那个中心所在的簇类中；</span><br><span class="line">四、调整新类（同一个簇中的数据对象）并且重新计算出新类的中心；</span><br><span class="line">五、循环步骤三和四，看中心是否收敛（不变），如果收敛或达到迭代次数（10次左右）则循环停止；</span><br><span class="line">六、结束</span><br></pre></td></tr></table></figure>
+
+<p><a href="http://www.naftaliiharris.com/blog/visualizing-k-means-clustering/" target="_blank" rel="noopener">K-means聚类可视化</a></p>
+<p>==Ps:多使用算法流程图==</p>
+<ul>
+<li>对K-means算法的评价</li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">优点：</span><br><span class="line">（1）算法简单、快速</span><br><span class="line">（2）对处理大数据集，该算法是相对高效率的。</span><br><span class="line">缺点：</span><br><span class="line">（1）要求用户必须事先给出要生成的簇的数目K</span><br><span class="line">（2）对初值K敏感</span><br><span class="line">（3）对于孤立点数据敏感</span><br></pre></td></tr></table></figure>
+
+<h3 id="2-K-means-算法"><a href="#2-K-means-算法" class="headerlink" title="2.K-means++算法"></a>2.K-means++算法</h3><blockquote>
+<p>K-means++算法选择初始聚类中心的基本原则是：初始的聚类中心之间的相互距离要尽可能的远</p>
+</blockquote>
+<ul>
+<li>对K-means算法“初始化K个聚类中心”进行优化</li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">一、随机选取一个样本作为第一个聚类中心；</span><br><span class="line">二、计算每个样本与当前已有聚类中心的最短距离（即与最近一个聚类中心的距离），这个值越大，表示被选取作为聚 类中心的概率较大；最后，用轮盘法（依据概率大小来进行抽选）选出下一个聚类中心；</span><br><span class="line">三、重复步骤二，直到选出K个聚类中心。选出初始点后，就可以继续使用标准的K-means算法了。</span><br><span class="line">四、第n(n&gt;2)个聚类中心的寻找办法：找到已确定的聚类中心的中心，计算每个样本与该中心的最短距离，按照步骤二处理</span><br></pre></td></tr></table></figure>
+
+<h3 id="3-SPSS实现K-means算法"><a href="#3-SPSS实现K-means算法" class="headerlink" title="3.SPSS实现K-means算法"></a>3.SPSS实现K-means算法</h3><blockquote>
+<p>SPSS默认使用的是K-means++算法</p>
+</blockquote>
+<blockquote>
+<p>操作步骤：SPSS-&gt;分析-&gt;分类-&gt;K-均值聚类（保存：聚类成员、与聚类中心的距离）(选项：初始聚类中心、每个个案的聚类信息)</p>
+<p>关注点：聚类成员</p>
+</blockquote>
+<h4 id="3-1数据的量纲不同如何解决"><a href="#3-1数据的量纲不同如何解决" class="headerlink" title="3.1数据的量纲不同如何解决"></a>3.1数据的量纲不同如何解决</h4><ul>
+<li>进行标准化</li>
+</ul>
+<blockquote>
+<p>SPSS-&gt;分析-&gt;描述统计-&gt;描述（将标准化值另存为变量）</p>
+</blockquote>
+
       
 
       
@@ -219,17 +230,6 @@
     <div class="article-info article-info-index">
       
       
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color2">created by luffy</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
       
 
       
@@ -280,7 +280,7 @@
     <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
     <p>扫一扫，分享到微信</p>
     <div class="wx-qrcode">
-      <img src="//pan.baidu.com/share/qrcode?url=http://yoursite.com/2020/01/29/Github-hexo%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/" alt="微信分享二维码">
+      <img src="//pan.baidu.com/share/qrcode?url=http://yoursite.com/2020/02/05/%E6%95%B0%E5%AD%A6%E5%BB%BA%E6%A8%A1-%E8%81%9A%E7%B1%BB%E6%A8%A1%E5%9E%8B/" alt="微信分享二维码">
     </div>
 </div>
 
@@ -294,18 +294,18 @@
   
 <nav id="article-nav">
   
-    <a href="/2020/01/30/%E6%95%B0%E5%AD%A6%E5%BB%BA%E6%A8%A1-%E5%88%86%E7%B1%BB%E6%A8%A1%E5%9E%8B/" id="article-nav-newer" class="article-nav-link-wrap">
+    <a href="/2020/02/06/%E6%95%B0%E5%AD%A6%E5%BB%BA%E6%A8%A1-%E6%97%B6%E9%97%B4%E5%BA%8F%E5%88%97%E5%88%86%E6%9E%90/" id="article-nav-newer" class="article-nav-link-wrap">
       <i class="icon-circle-left"></i>
       <div class="article-nav-title">
         
-          数学建模-分类模型
+          数学建模-时间序列分析
         
       </div>
     </a>
   
   
-    <a href="/2020/01/29/%E5%9B%BE%E7%89%87%E5%92%8C%E5%AD%97%E7%AC%A6%E4%B8%B2%E7%BC%96%E7%A0%81%E7%9A%84%E7%9B%B8%E4%BA%92%E8%BD%AC%E6%8D%A2/" id="article-nav-older" class="article-nav-link-wrap">
-      <div class="article-nav-title">图片和字符串编码的相互转换</div>
+    <a href="/2020/02/03/Maven/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">Maven</div>
       <i class="icon-circle-right"></i>
     </a>
   
@@ -332,7 +332,7 @@
                 </span>
                 <span class="tooltip-content">
                     <div class="toc-article">
-                    <ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#一、hexo搭建本地博客"><span class="toc-number">1.</span> <span class="toc-text">一、hexo搭建本地博客</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#二、博客部署到Github"><span class="toc-number">2.</span> <span class="toc-text">二、博客部署到Github</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#三、自定义博客主题"><span class="toc-number">3.</span> <span class="toc-text">三、自定义博客主题</span></a></li></ol>
+                    <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#聚类模型"><span class="toc-number">1.</span> <span class="toc-text">聚类模型</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#1-K-means聚类算法"><span class="toc-number">1.1.</span> <span class="toc-text">1.K-means聚类算法</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-K-means-算法"><span class="toc-number">1.2.</span> <span class="toc-text">2.K-means++算法</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3-SPSS实现K-means算法"><span class="toc-number">1.3.</span> <span class="toc-text">3.SPSS实现K-means算法</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#3-1数据的量纲不同如何解决"><span class="toc-number">1.3.1.</span> <span class="toc-text">3.1数据的量纲不同如何解决</span></a></li></ol></li></ol></li></ol>
                     </div>
                 </span>
             </div>
